@@ -1,0 +1,1 @@
+# posthog-erc20-event-plugin
