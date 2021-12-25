@@ -1,0 +1,30 @@
+{
+    "name": "Ethereum events",
+    "description": "Ingests ethereum events into PostHog",
+    "url": "https://github.com/PostHog/posthog-erc20-events-plugin",
+    "main": "index.ts",
+    "posthogVersion": ">= 1.27.0",
+    "config": [
+        {
+            "key": "contractAddress",
+            "name": "Contract Address",
+            "hint": "Address of the contract to listen to for events",
+            "type": "string",
+            "required": true
+        },
+        {
+            "key": "contractABI",
+            "name": "Contract ABI",
+            "hint": "JSON file that contains the ABI of the contract",
+            "type": "attachment",
+            "required": true
+        },
+        {
+            "key": "eventParsingInstructions",
+            "name": "Event Parsing Instructions",
+            "hint": "JSON file that contains information about how the plugin should parse the events. Details on format are found here: https://github.com/PostHog/posthog-erc20-event-plugin#readme",
+            "type": "attachment",
+            "required": false
+        }
+    ]
+}
